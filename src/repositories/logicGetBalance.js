@@ -32,9 +32,9 @@ function getBaleance(){
   }, 0);
 
 const outcome = transactions
-  .filter(transactions => transactions.type === 'outcome').reduce((sum, acc) => {
-  return sum + acc.value
-}, 0);
+  .filter(transactions => transactions.type === 'outcome').reduce((sum, acc) => {return sum + acc.value}, 0);
+
+console.log(outcome);
 
   return {
     income,
